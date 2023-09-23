@@ -1,0 +1,240 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  scroll-behavior: smooth;
+}
+
+/*  NAV-MENU */
+
+.mount {
+  background-image: url(images/mountains.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.main-text {
+  padding: 12rem;
+}
+
+.nav-item {
+  padding-left: 10px;
+}
+
+.main-head {
+  font-size: 5rem;
+}
+
+.navbar {
+  transition: background-color 0.3s ease, opacity 0.3s ease; /* Add smooth transitions */
+}
+
+/* Styles for the navbar when scrolled */
+   .navbar.navbar-scrolled {
+   
+     background-color: rgb(255, 255, 255); 
+     background-color: rgba(255, 255, 255, 0.5);  /* Adjust alpha for translucency */
+     backdrop-filter: blur(50px);  /* Adjust the blur intensity as needed */
+     background-color: hsla(0, 0%, 100%, 0); /* Lower alpha value for more translucency */ 
+     }
+
+
+    /* Define a custom gradient button class */
+.main-text .gradient-button {
+  background: linear-gradient(120deg, hsl(226, 100%, 50%), #5892fc);
+  border: none;
+  border-radius: 50px;
+  padding: 25px 70px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.5s ease; /* Smooth transition on hover */
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Add a hover effect */
+.gradient-button:hover {
+  background: linear-gradient(90deg, #ee0979, #ff6a00);
+}
+
+.btn {
+  padding: 15px 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #ee0979, #ff6a00);
+  border: none;
+}
+
+.myself,
+.main-head,
+.main-foot,
+.log-in {
+  color: #ffffff;
+  font-family: "Black Han Sans", sans-serif;
+}
+
+/* FOOTER SECTION */
+
+.icons {
+  font-size: 2rem;
+  margin-left: 2rem;
+
+}
+
+.icons-list {
+  text-align: center;
+}
+
+.foot {
+  padding: 5rem 0rem;
+  
+}
+
+.main-foot {
+  font-size: 10rem;
+  letter-spacing: 2rem;
+  text-wrap: 2;
+}
+
+.links-item {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+
+}
+
+.links-list {
+  padding-left: 0;
+}
+
+.foot-links {
+  color: #ffffff;
+  text-decoration: none;
+ 
+}
+
+.icons {
+  color: #ffffff;
+  border-right: 2px solid white;
+  padding-right: 1.5rem;
+}
+
+.icons:hover {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+/* INTRO_SEC */
+
+.hr-custom {
+  width: 7rem;
+  border-top: 3px solid;
+  color: white;
+  opacity: 1;
+  padding: 1rem;
+}
+
+#intro-sec {
+  margin-top: 10rem;
+}
+
+.leading {
+  font-size: 1.2rem;
+  line-height: 1.1;
+}
+
+/* SKILSS_SEC */
+
+.wiz {
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.custom-hr {
+  width: 10rem;
+  border-top: 3px solid;
+  color: black;
+  padding: 1rem;
+  opacity: 1;
+}
+
+#skills-sec {
+  margin-top: 10rem;
+  padding: 5rem;
+}
+
+/* LOGIN SECTION */
+
+#login-form {
+  padding: 7rem;
+  color: white;
+}
+
+.card-title {
+  font-family: "Black Han Sans", sans-serif;
+}
+
+.card-f {
+  padding: 65% 5%;
+}
+
+::placeholder {
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .main-text {
+    padding: 13rem 2rem;
+  }
+
+  .main-head {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .contact-button {
+    font-size: 16px;
+    padding: 25px 50px;
+  }
+
+  .contact-me {
+    text-align: center;
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  .card-margin {
+    margin: 10rem;
+  }
+
+  #intro-sec {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .one {
+    padding: 10%;
+    right: 10%;
+    position: relative;
+  }
+
+  .hr-custom {
+    position: relative;
+    left: 35%;
+  }
+
+  #skills-sec {
+    text-align: center;
+  }
+
+  .custom-hr {
+    position: relative;
+    left: 20%;
+  }
+}
